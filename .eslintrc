@@ -1,0 +1,14 @@
+{
+    "plugins": [
+        "eslint-plugin",
+        "node"
+    ],
+    "extends": [
+        "plugin:node/recommended",
+        "plugin:eslint-plugin/recommended"
+    ],
+    "rules": {
+        "node/no-unpublished-require": ["off"]
+    }
+
+}

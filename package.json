@@ -1,0 +1,28 @@
+{
+  "name": "eslint-plugin-better-linebreak-style",
+  "version": "0.0.0",
+  "description": "Enhanced linting for linebreak styles based on OS and SCM configuration",
+  "keywords": [
+    "eslint",
+    "eslintplugin",
+    "eslint-plugin"
+  ],
+  "author": "Brian LaPierre",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha tests --recursive",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "eslint": "~5.16.0",
+    "eslint-plugin-eslint-plugin": "^2.1.0",
+    "eslint-plugin-node": "^10.0.0",
+    "mocha": "^3.1.2"
+  },
+  "engines": {
+    "node": ">=10.0.0"
+  },
+  "license": "ISC"
+}
