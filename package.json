@@ -1,6 +1,6 @@
 {
   "name": "eslint-plugin-better-linebreak-style",
-  "version": "0.0.0",
+  "version": "0.0.1-beta.0",
   "description": "Enhanced linting for linebreak styles based on OS and SCM configuration",
   "keywords": [
     "eslint",
