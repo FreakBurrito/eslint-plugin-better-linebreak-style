@@ -6,24 +6,24 @@ Allows for easy cross platform collobortion bwtween developers
 
 This rule aims to allow projects to specify line endsings that will work natively with default configurations of git for the host operating systems.
 
-Examples of **incorrect** code for this rule:
+### Examples of **incorrect** code for this rule:
 
-### When running on Windows
+#### When running on Windows
 
 ```js
 var a = 'a'; // \n
 ```
 
-### When running on Unix based OS
+#### When running on Unix based OS
 
 ```js
 var a = 'a'; // \r\n
 ```
 
 
-Examples of **correct** code for this rule:
+### Examples of **correct** code for this rule:
 
-### When running on Unix based OS
+#### When running on Unix based OS
 
 ```js
 
@@ -35,7 +35,7 @@ function foo(params) { // \n
 }// \n
 ```
 
-### When running on Windows
+#### When running on Windows
 
 ```js
 
@@ -51,6 +51,10 @@ function foo(params) { // \r\n
 
 This rule should not be used when git is configured to force certain line endings. If .gitattribues is configured to use one style of line endings over anotther, or if all developers in a project have core.autocrlf=false
 
+This rule should also not be used when publishing any node scripts with a shebang (e.g. `#!/usr/bin/env node`) as a carriage return will make this invalid.
+
 ## Further Reading
 
- * TBA
+The conversations that inspired me to create this plugin
+
+ * https://github.com/eslint/eslint/issues/11458

@@ -40,7 +40,8 @@ ruleTester.run("native", rule, {
             errors: [{
                 message: `Expected linebreaks to be '${expectedLinebreakAssertion}' but found '${foundLinebreakAssertion}'.`,
                 type: "Program"
-            }]
+            }],
+            output: `var a = 'a'; // ${validLinebreak}`
         }
     ]
 });
